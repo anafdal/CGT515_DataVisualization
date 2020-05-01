@@ -1,2 +1,2 @@
 # CGT515_Finale
-Work in Progress
+Data for the spread of Covid-19
