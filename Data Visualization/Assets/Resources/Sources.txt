@@ -1,0 +1,4 @@
+Sources:
+https://bnonews.com/index.php/2020/03/tracking-coronavirus-u-s-real-time-visualizations/
+https://www.worldometers.info/coronavirus/country/us/
+https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html
