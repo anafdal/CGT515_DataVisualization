@@ -136,4 +136,22 @@ public class UIOptions : MonoBehaviour
     {
         color = 2;
     }
+
+
+    public static int pointChoice = 1;
+
+    public void PickPoint1()//Cases per state
+    {
+
+        pointChoice = 1;
+        Debug.Log(pointChoice);
+    }
+
+    public void PickPoint2()//Death rate per state
+    {
+
+        pointChoice = 2;
+        Debug.Log(pointChoice);
+    }
+
 }
