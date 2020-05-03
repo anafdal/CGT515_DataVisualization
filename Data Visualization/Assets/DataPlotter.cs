@@ -33,7 +33,7 @@ public class DataPlotter : MonoBehaviour
     public GameObject PointHolder;
 
     // Use this for initialization
-    void Update()
+    void Start()
     {
        
 
@@ -74,7 +74,7 @@ public class DataPlotter : MonoBehaviour
                     string dataPointName =
                         dataList[i][geoArea] + " "
                         + columnList[j] + " "
-                        + dataList[i][caseRate];
+                        + dataList[i][caseRate];       
 
                     // Debug.Log(x + " " + y + " " + z);
 
@@ -89,6 +89,8 @@ public class DataPlotter : MonoBehaviour
 
     }
 
+
+   
     public List<int> ChangeDate(string caseRate)
     {
         Case.Clear();

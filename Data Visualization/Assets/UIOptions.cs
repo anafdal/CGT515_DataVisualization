@@ -15,7 +15,8 @@ public class UIOptions : MonoBehaviour
     public GameObject NoAnimation;
     public GameObject main;
 
-
+    public ColumnAnimation1 data1;
+    public ColumnAnimation2 data2;
 
     public static int color=1;
     
@@ -67,15 +68,17 @@ public class UIOptions : MonoBehaviour
             child.transform.localScale = Vector3.one;
             child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
         }
-        foreach(Transform child in state2.transform)
+        /*foreach(Transform child in state2.transform)
         {
             child.transform.localScale = new Vector3(child.localScale.x, 1, child.localScale.z);
             child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
-        }
+        }*/
 
 
        
             method = 1;
+           // data1.enabled = true;
+           // data2.enabled = false;
             choice = 0;//only show animation
         
 
@@ -91,16 +94,18 @@ public class UIOptions : MonoBehaviour
             child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
             child.transform.localScale = Vector3.one;
         }
-        foreach (Transform child in state1.transform)
+      /*  foreach (Transform child in state1.transform)
         {
             child.transform.localScale = new Vector3(child.localScale.x,1,child.localScale.z);
             child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
-        }
+        }*/
 
 
         
             method = 2;
-            choice = 0;//only show animation
+       // data1.enabled = false;
+        //data2.enabled = true;
+        choice = 0;//only show animation
         
     }
 
@@ -138,20 +143,5 @@ public class UIOptions : MonoBehaviour
     }
 
 
-    public static int pointChoice = 1;
-
-    public void PickPoint1()//Cases per state
-    {
-
-        pointChoice = 1;
-        Debug.Log(pointChoice);
-    }
-
-    public void PickPoint2()//Death rate per state
-    {
-
-        pointChoice = 2;
-        Debug.Log(pointChoice);
-    }
-
+  
 }
