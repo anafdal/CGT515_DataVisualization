@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ColumnAnimation2 : MonoBehaviour
 {
@@ -13,16 +14,16 @@ public class ColumnAnimation2 : MonoBehaviour
     private List<string> Area = new List<string>();//list of all the states and US territories
     private List<int> temporary = new List<int>();
 
+
     //column names
     private string geoArea;
     private string tempList;
-    private int[] tempValue;
+
 
 
     //settings
     public float columnScale = 0.1f;
-    float time = 0f;
-    float timer=0f;
+    private bool value = true;
 
     void Start()
     {
@@ -34,8 +35,9 @@ public class ColumnAnimation2 : MonoBehaviour
 
 
         geoArea = columnList[0];//column
-        tempValue = new int[dataList.Count];//temporary array
-                                            //tempList = columnList[29];//test
+
+        //tempList = columnList[29];//test
+
 
 
         //Loop through dataList
@@ -50,53 +52,58 @@ public class ColumnAnimation2 : MonoBehaviour
 
     void Update()
     {
+
+
         if (UIOptions.method == 2)//if user selects this animation
         {
-            timer = Time.deltaTime;
-            time += Time.deltaTime;
-            //Debug.Log(time);
+            parent.SetActive(true);
 
-
-            //put some kind of delay here
-            for (var u = 1; u < columnList.Count; u++)
+            if (value == true)
             {
 
-                tempList = columnList[u];//smth is weird here
-                temporary = Add(tempList);
-
-                //Debug.Log("List " + (u));
+                StartCoroutine(RateCoroutine());
             }
 
-
-
-
-
-            if (time < 18 + timer)//0.5seconds for 36 day
-            {
-                InvokeRepeating("ChangeColumn", 0.00001f, 0.5f);
-
-            }
-            else
-            {
-                CancelInvoke();
-            }
         }
-
         else
         {
             foreach (Transform child in parent.transform)
             {
                 child.transform.localScale = new Vector3(child.localScale.x, 1, child.localScale.z);
                 child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
+             
             }
 
-            
+            parent.SetActive(false);
+            value = true;
         }
 
     }
 
-    public void ChangeColumn()//the animation part
+
+
+    IEnumerator RateCoroutine()//wait for ... seconds before car becomes active
     {
+
+        //put some kind of delay here
+        for (var u = 1; u < columnList.Count; u++)
+        {
+
+            tempList = columnList[u];
+            temporary = Add(tempList);
+
+            yield return new WaitForSeconds((float)0.5);
+            ChangeColumn(temporary);
+        }
+
+        value = false;
+
+    }
+
+
+    public void ChangeColumn(List<int> temporary)//the animation part
+    {
+
         for (var i = 0; i < dataList.Count; i++)
         {
 
@@ -110,13 +117,16 @@ public class ColumnAnimation2 : MonoBehaviour
                     int y = temporary[i];
                     float addY = y * columnScale;
 
-                    //Debug.Log("Y "+y);
+                    if (child.name == Area[54])
+                    {
+                        Debug.Log(Area[i] + " " + temporary[i]);
+                    }
 
 
 
                     //how columns are located
-                    child.transform.localPosition += new Vector3(0, addY / 2, 0);
-                    child.transform.localScale += new Vector3(0, addY, 0);
+                    child.transform.localPosition = new Vector3(child.localPosition.x, addY / 2, child.localPosition.z);
+                    child.transform.localScale = new Vector3(71, addY, 71);
                     child.GetComponent<Renderer>().material.color = Color.red;
 
 
@@ -138,21 +148,18 @@ public class ColumnAnimation2 : MonoBehaviour
         for (var n = 0; n < dataList.Count; n++)
         {
 
-
-            tempValue[n] = System.Convert.ToInt32(dataList[n][tempList]);//add previous values
-            temporary.Add(tempValue[n]);
+            temporary.Add(System.Convert.ToInt32(dataList[n][tempList]));
 
             //temporary.Add(System.Convert.ToInt32(dataList[n][tempList]));
             //Debug.Log(n);
-            //Debug.Log(Area[n]+" "+tempValue[n]);
 
         }
 
-        //Debug.Log(temporary.Count);
+        // Debug.Log(temporary.Count);
         return temporary;
-
 
     }
 
-}
 
+
+}

@@ -68,19 +68,12 @@ public class UIOptions : MonoBehaviour
             child.transform.localScale = Vector3.one;
             child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
         }
-        /*foreach(Transform child in state2.transform)
-        {
-            child.transform.localScale = new Vector3(child.localScale.x, 1, child.localScale.z);
-            child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
-        }*/
+
+        state0.SetActive(false);
 
 
-       
             method = 1;
-           // data1.enabled = true;
-           // data2.enabled = false;
-            choice = 0;//only show animation
-        
+            choice = 0;//only show animation      
 
     }
     public void Pickmethod2()//animation for total deaths
@@ -94,15 +87,16 @@ public class UIOptions : MonoBehaviour
             child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
             child.transform.localScale = Vector3.one;
         }
-      /*  foreach (Transform child in state1.transform)
-        {
-            child.transform.localScale = new Vector3(child.localScale.x,1,child.localScale.z);
-            child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
-        }*/
+        /*  foreach (Transform child in state1.transform)
+          {
+              child.transform.localScale = new Vector3(child.localScale.x,1,child.localScale.z);
+              child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
+          }*/
 
 
-        
-            method = 2;
+        state0.SetActive(false);
+
+        method = 2;
        // data1.enabled = false;
         //data2.enabled = true;
         choice = 0;//only show animation

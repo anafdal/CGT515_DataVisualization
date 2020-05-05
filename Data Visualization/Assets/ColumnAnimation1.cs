@@ -12,17 +12,6 @@ public class ColumnAnimation1 : MonoBehaviour
     private List<Dictionary<string, object>> dataList;
     private List<string> columnList;
     private List<string> Area = new List<string>();//list of all the states and US territories
-
-    private List<string> day1 = new List<string>();
-    private List<string> day2 = new List<string>();
-    private List<string> day3 = new List<string>();
-    private List<string> day4 = new List<string>();
-    private List<string> day5 = new List<string>();
-
-    private List<string> day6 = new List<string>();
-    private List<string> day7 = new List<string>();
-    private List<string> day9 = new List<string>();
-
     private List<int> temporary = new List<int>();
 
 
@@ -34,7 +23,6 @@ public class ColumnAnimation1 : MonoBehaviour
 
     //settings
     public float columnScale = 0.1f;
-    private int keepTrack = 1;
     private bool value = true;
 
     void Start()
@@ -68,10 +56,11 @@ public class ColumnAnimation1 : MonoBehaviour
       
         if (UIOptions.method == 1)//if user selects this animation
         {
+           
 
             if (value == true)
             {
-
+                parent.SetActive(true);
                 StartCoroutine(RateCoroutine());
             }
 
@@ -83,7 +72,9 @@ public class ColumnAnimation1 : MonoBehaviour
                 child.transform.localScale = new Vector3(child.localScale.x, 1, child.localScale.z);
                 child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
             }
+            parent.SetActive(false);
 
+            value = true;
         }
 
     }
