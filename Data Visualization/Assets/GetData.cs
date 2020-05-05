@@ -11,7 +11,7 @@ public class GetData : MonoBehaviour
     private void OnMouseDown()
     {
 
-        Debug.Log(this.name);
+        //Debug.Log(this.name);
 
         data = this.name;
     }
