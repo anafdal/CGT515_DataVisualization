@@ -15,9 +15,6 @@ public class UIOptions : MonoBehaviour
     public GameObject NoAnimation;
     public GameObject main;
 
-    public ColumnAnimation1 data1;
-    public ColumnAnimation2 data2;
-
     public static int color=1;
     
 
@@ -29,30 +26,35 @@ public class UIOptions : MonoBehaviour
 
     public void PickData1()//Total cases per state
     {
+        state0.SetActive(true);
         method = 0;//don't show animation
         choice = 1;
     }
 
     public void PickData2()//Death rate per state
     {
+        state0.SetActive(true);
         method = 0;//don't show animation
         choice = 2;
     }
 
     public void PickData3()//Currently active cases per state
     {
+        state0.SetActive(true);
         method = 0;//don't show animation
         choice = 3;
     }
 
     public void PickData4()//Recovered cases per state
     {
+        state0.SetActive(true);
         method = 0;//don't show animation
         choice = 4;
     }
 
     public void PickData5()//Total tests per state
     {
+        state0.SetActive(true);
         method = 0;//don't show animation
         choice = 5;
     }
@@ -60,7 +62,7 @@ public class UIOptions : MonoBehaviour
     public void Pickmethod1()//animation for total cases
     {
         
-        Debug.Log("Picked one");
+        //Debug.Log("Picked one");
 
         //reset
         foreach (Transform child in state0.transform)
@@ -78,7 +80,7 @@ public class UIOptions : MonoBehaviour
     }
     public void Pickmethod2()//animation for total deaths
     {
-        Debug.Log("Picked two");
+        //Debug.Log("Picked two");
 
         //reset
         foreach (Transform child in state0.transform)
@@ -87,18 +89,12 @@ public class UIOptions : MonoBehaviour
             child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
             child.transform.localScale = Vector3.one;
         }
-        /*  foreach (Transform child in state1.transform)
-          {
-              child.transform.localScale = new Vector3(child.localScale.x,1,child.localScale.z);
-              child.transform.localPosition = new Vector3(child.transform.localPosition.x, ColumnPlotter.previousPos.y, child.transform.localPosition.z);
-          }*/
+     
 
 
         state0.SetActive(false);
 
         method = 2;
-       // data1.enabled = false;
-        //data2.enabled = true;
         choice = 0;//only show animation
         
     }

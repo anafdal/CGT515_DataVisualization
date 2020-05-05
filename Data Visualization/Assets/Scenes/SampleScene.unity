@@ -335,8 +335,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 1660091857}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &76964371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,7 +1548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click to See Animations
+  m_Text: Click to see Timleine Animations
 --- !u!222 &610668739
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1617,8 +1615,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 1660091857}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &651428282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3530,8 +3526,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &965833093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3684,8 +3678,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &982929642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3880,7 +3872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Show Timline for Spread of CoVid-19 in US
+  m_Text: Show Timline for Spread of COVID-19 in US
 --- !u!222 &999381868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3947,8 +3939,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1031831761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4995,8 +4985,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1042115278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5539,7 +5527,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Click to See Current Data Per State
+  m_Text: Click to see Current Data Per State
 --- !u!222 &1243494628
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6727,8 +6715,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1355824865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7012,8 +6998,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1537714342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7036,7 +7020,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
     m_HighlightedColor: {r: 0.6415094, g: 0.18458524, b: 0.18458524, a: 1}
-    m_PressedColor: {r: 0.15477037, g: 0.62699604, b: 0.6981132, a: 1}
+    m_PressedColor: {r: 0.047058824, g: 0.16078432, b: 0.6627451, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7450,8 +7434,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1603157323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7604,8 +7586,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1617933597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7628,7 +7608,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
     m_HighlightedColor: {r: 0.6415094, g: 0.18458524, b: 0.18458524, a: 1}
-    m_PressedColor: {r: 0.15477037, g: 0.62699604, b: 0.6981132, a: 1}
+    m_PressedColor: {r: 0.046724807, g: 0.15920909, b: 0.6603774, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7675,7 +7655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 3682f7747d485db4586750a832808b31, type: 2}
-  m_Color: {r: 0, g: 0.54320693, b: 1, a: 1}
+  m_Color: {r: 0.22352941, g: 0.7529412, b: 0.6627451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7837,7 +7817,7 @@ GameObject:
   - component: {fileID: 1621359385}
   - component: {fileID: 1621359384}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Floor 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8054,8 +8034,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1645974053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8078,7 +8056,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
     m_HighlightedColor: {r: 0.6415094, g: 0.18458524, b: 0.18458524, a: 1}
-    m_PressedColor: {r: 0.15477037, g: 0.62699604, b: 0.6981132, a: 1}
+    m_PressedColor: {r: 0.047058824, g: 0.16078432, b: 0.6627451, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -8488,8 +8466,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1720898539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8804,8 +8780,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1832030586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8958,8 +8932,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!114 &1889771539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9609,8 +9581,6 @@ MonoBehaviour:
   Animation: {fileID: 1618771183}
   NoAnimation: {fileID: 1104239002}
   main: {fileID: 895996041}
-  data1: {fileID: 1561630025}
-  data2: {fileID: 0}
 --- !u!1 &2102510973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9625,7 +9595,7 @@ GameObject:
   - component: {fileID: 2102510974}
   - component: {fileID: 2102510978}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
