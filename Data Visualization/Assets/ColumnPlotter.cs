@@ -21,7 +21,7 @@ public class ColumnPlotter : MonoBehaviour
     private List<int> Active = new List<int>();//list of active cases currently
     private List<int> Test= new List<int>();//list of testing done
     private List<int> Recovered = new List<int>();//list of people recovered from the virus
-    private static List<string> name = new List<string>();//nned this for UI
+    private new static List<string> name = new List<string>();//nned this for UI
 
     //column names
     private string geoArea;
@@ -123,7 +123,7 @@ public class ColumnPlotter : MonoBehaviour
                         //how columns are located
                         child.transform.localPosition+= new Vector3(0, addY/2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
-                        child.name=Area[i] + " : " + Case[i];///change name
+                        child.name=Area[i] + " : " + Case[i]+" cases";///change name
 
                         if (UIOptions.color == 2)
                         { //ChangeColor(lowquart, highquart, mean, Case);
@@ -170,7 +170,7 @@ public class ColumnPlotter : MonoBehaviour
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
-                        child.name = Area[i] + " : " + Dec[i];///change name
+                        child.name = Area[i] + " : " + Dec[i]+" deaths";///change name
 
                         //ChangeColor(lowquart, highquart, mean, Case);
                         if (UIOptions.color == 2)
@@ -212,7 +212,7 @@ public class ColumnPlotter : MonoBehaviour
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
-                        child.name = Area[i] +" : "+ Active[i];///change name
+                        child.name = Area[i] +" : "+ Active[i]+" active cases";///change name
 
                         //color columns based on mean
                         if (UIOptions.color == 2)
@@ -255,7 +255,7 @@ public class ColumnPlotter : MonoBehaviour
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
-                        child.transform.name = Area[i] + " : " + Recovered[i];///change name
+                        child.transform.name = Area[i] + " : " + Recovered[i]+" recovered";///change name
 
                         //color columns based on mean
                         if (UIOptions.color == 2)
@@ -298,7 +298,7 @@ public class ColumnPlotter : MonoBehaviour
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
-                        child.transform.name = Area[i] + " : " + Test[i];///change name
+                        child.transform.name = Area[i] + " : " + Test[i]+" tested";///change name
 
                         //color columns based on mean
                         if (UIOptions.color == 2)
