@@ -12,8 +12,11 @@ public class GetData : MonoBehaviour
     {
 
         //Debug.Log(this.name);
+     
 
-        data = this.name;
+      data = "This is" + this.name;
+        
+      
     }
 
 

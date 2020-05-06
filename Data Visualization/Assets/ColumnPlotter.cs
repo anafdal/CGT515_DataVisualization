@@ -21,6 +21,7 @@ public class ColumnPlotter : MonoBehaviour
     private List<int> Active = new List<int>();//list of active cases currently
     private List<int> Test= new List<int>();//list of testing done
     private List<int> Recovered = new List<int>();//list of people recovered from the virus
+    private static List<string> name = new List<string>();//nned this for UI
 
     //column names
     private string geoArea;
@@ -41,7 +42,8 @@ public class ColumnPlotter : MonoBehaviour
     private float median = 0;
     private float lowquart = 0;
     private float highquart = 0;
-    
+
+    public static List<string> Name { get => name; set => name = value; }
 
     void Start()
     {
@@ -74,6 +76,7 @@ public class ColumnPlotter : MonoBehaviour
         for (var i = 0; i < dataList.Count; i++)//take the usa out from here dumbass
         {
             // Get value in poinList at ith "row", in "column" Name
+            Name.Add(System.Convert.ToString(dataList[i][geoArea]));
             Area.Add(System.Convert.ToString(dataList[i][geoArea]));
             Case.Add(System.Convert.ToInt32(dataList[i][caseRate]));
             Dec.Add(System.Convert.ToInt32(dataList[i][deathRate]));
@@ -105,6 +108,7 @@ public class ColumnPlotter : MonoBehaviour
                 {
                     if (UIOptions.choice==1)//Total Cases
                     {
+                       
                         child.transform.localScale = previousSize;//reset
                         child.transform.localPosition =new Vector3(child.transform.localPosition.x, previousPos.y, child.transform.localPosition.z);
 
@@ -119,8 +123,8 @@ public class ColumnPlotter : MonoBehaviour
                         //how columns are located
                         child.transform.localPosition+= new Vector3(0, addY/2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
+                        child.name=Area[i] + " : " + Case[i];///change name
 
-                       
                         if (UIOptions.color == 2)
                         { //ChangeColor(lowquart, highquart, mean, Case);
 
@@ -150,6 +154,7 @@ public class ColumnPlotter : MonoBehaviour
                     }
                     else if (UIOptions.choice == 2)//Death Rate
                     {
+                        child.name = Area[i] +" : "+ Dec[i];///change name
                         child.transform.localScale = previousSize;//reset
                         child.transform.localPosition = new Vector3(child.transform.localPosition.x, previousPos.y, child.transform.localPosition.z);
 
@@ -160,10 +165,12 @@ public class ColumnPlotter : MonoBehaviour
                         median = Statistics.findMedian(Dec);
                         lowquart = Statistics.findLowerQuartile(median, Dec);
                         highquart = Statistics.findHigherQuartile(median, Dec);
+                        
 
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
+                        child.name = Area[i] + " : " + Dec[i];///change name
 
                         //ChangeColor(lowquart, highquart, mean, Case);
                         if (UIOptions.color == 2)
@@ -198,13 +205,14 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localScale = previousSize;//reset
                         child.transform.localPosition = new Vector3(child.transform.localPosition.x, previousPos.y, child.transform.localPosition.z);
 
-                        y = Statistics.normalizeValue(Statistics.FindMinValue(activeCasesRate, dataList), Statistics.FindMaxValue(activeCasesRate, dataList), Dec[i]);
+                        y = Statistics.normalizeValue(Statistics.FindMinValue(activeCasesRate, dataList), Statistics.FindMaxValue(activeCasesRate, dataList), Active[i]);
                         addY = y * columnScale;
                         mean = Statistics.findMean(activeCasesRate, dataList);
 
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
+                        child.name = Area[i] +" : "+ Active[i];///change name
 
                         //color columns based on mean
                         if (UIOptions.color == 2)
@@ -240,13 +248,14 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localPosition = new Vector3(child.transform.localPosition.x, previousPos.y, child.transform.localPosition.z);
 
                         //statistics
-                        y = Statistics.normalizeValue(Statistics.FindMinValue(recovered, dataList), Statistics.FindMaxValue(recovered, dataList), Dec[i]);
+                        y = Statistics.normalizeValue(Statistics.FindMinValue(recovered, dataList), Statistics.FindMaxValue(recovered, dataList), Recovered[i]);
                         addY = y * columnScale;
                         mean = Statistics.findMean(recovered, dataList);
 
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
+                        child.transform.name = Area[i] + " : " + Recovered[i];///change name
 
                         //color columns based on mean
                         if (UIOptions.color == 2)
@@ -282,13 +291,14 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localPosition = new Vector3(child.transform.localPosition.x, previousPos.y, child.transform.localPosition.z);
 
                         //statistics
-                        y = Statistics.normalizeValue(Statistics.FindMinValue(testRate, dataList), Statistics.FindMaxValue(testRate, dataList), Dec[i]);
+                        y = Statistics.normalizeValue(Statistics.FindMinValue(testRate, dataList), Statistics.FindMaxValue(testRate, dataList), Test[i]);
                         addY = y * columnScale;
                         mean = Statistics.findMean(testRate, dataList);
 
                         //how columns are located
                         child.transform.localPosition += new Vector3(0, addY / 2, 0);
                         child.transform.localScale += new Vector3(0, addY, 0);
+                        child.transform.name = Area[i] + " : " + Test[i];///change name
 
                         //color columns based on mean
                         if (UIOptions.color == 2)

@@ -16,7 +16,8 @@ public class UIOptions : MonoBehaviour
     public GameObject main;
 
     public static int color=1;
-    
+  
+   
 
     public void Pick(string text)
     {
@@ -27,13 +28,34 @@ public class UIOptions : MonoBehaviour
     public void PickData1()//Total cases per state
     {
         state0.SetActive(true);
+
+        //naming
+        int index = 0;
+        foreach (Transform child in state0.transform)
+        {
+            child.transform.name = ColumnPlotter.Name[index];
+            index++;
+        }
+
+
         method = 0;//don't show animation
         choice = 1;
     }
 
     public void PickData2()//Death rate per state
     {
+        //Debug.Log("2");
         state0.SetActive(true);
+
+        //naming
+        int index = 0;
+        foreach (Transform child in state0.transform)
+        {
+            child.transform.name = ColumnPlotter.Name[index];
+            index++;
+        }
+
+
         method = 0;//don't show animation
         choice = 2;
     }
@@ -41,6 +63,16 @@ public class UIOptions : MonoBehaviour
     public void PickData3()//Currently active cases per state
     {
         state0.SetActive(true);
+        //naming
+        int index = 0;
+        foreach (Transform child in state0.transform)
+        {
+            child.transform.name = ColumnPlotter.Name[index];
+            index++;
+        }
+
+
+
         method = 0;//don't show animation
         choice = 3;
     }
@@ -48,6 +80,15 @@ public class UIOptions : MonoBehaviour
     public void PickData4()//Recovered cases per state
     {
         state0.SetActive(true);
+        //naming
+        int index = 0;
+        foreach (Transform child in state0.transform)
+        {
+            child.transform.name = ColumnPlotter.Name[index];
+            index++;
+        }
+
+
         method = 0;//don't show animation
         choice = 4;
     }
@@ -55,6 +96,14 @@ public class UIOptions : MonoBehaviour
     public void PickData5()//Total tests per state
     {
         state0.SetActive(true);
+        //naming
+        int index = 0;
+        foreach (Transform child in state0.transform)
+        {
+            child.transform.name = ColumnPlotter.Name[index];
+            index++;
+        }
+
         method = 0;//don't show animation
         choice = 5;
     }
@@ -124,11 +173,24 @@ public class UIOptions : MonoBehaviour
 
     public void PickMean()
     {
+        int index = 0;
+        foreach (Transform child in state0.transform)
+        {
+            
+            child.transform.name = ColumnPlotter.Name[index];
+            index++;
+        }
         color = 1;
     }
 
     public void PickMedian()
     {
+        int index = 0;
+        foreach (Transform child in state0.transform)
+        {
+            child.transform.name = ColumnPlotter.Name[index];
+            index++;
+        }
         color = 2;
     }
 
