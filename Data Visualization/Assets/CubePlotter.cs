@@ -101,49 +101,58 @@ public class CubePlotter : MonoBehaviour
                 Debug.Log(Case[j] + " " + Population[j]);
 
 
-                if (Input.GetKeyDown("1"))
+                if (UIOptions3.choice==1)///cases per population per state
                 {
                     float temporary = ((float)Case[j] / (float)Population[j]) * 100;
                     colorLimit = (int)temporary;
 
                     ColorGrid(colorLimit);
 
-                    Debug.Log("Case is " + colorLimit);
+                   // Debug.Log("Case is " + colorLimit);
                 }
-                else if (Input.GetKeyDown("2"))
+                else if (UIOptions3.choice == 2)//deaths in all the cases per state
                 {
 
                     float temporary = ((float)Dec[j] / (float)Case[j]) * 100;
                     colorLimit = (int)temporary;
 
 
-                    Debug.Log("Death is " + colorLimit);
+                   // Debug.Log("Death is " + colorLimit);
                     
 
                     ColorGrid(colorLimit);
 
                 }
-                else if (Input.GetKeyDown("3"))
+                else if (UIOptions3.choice == 3)//continuing cases (not recovered) in all the cases per state
                 {
 
                     float temporary = ((float)Active[j] / (float)Case[j]) * 100;
                     colorLimit = (int)temporary;
 
-                    Debug.Log("Active is " + colorLimit);
+                   // Debug.Log("Active is " + colorLimit);
 
                     ColorGrid(colorLimit);
                 }
-                else if (Input.GetKeyDown("4"))
+                else if (UIOptions3.choice == 4)//recovered cases from allc cases in state
                 {
 
                     float temporary = ((float)Recovered[j] / (float)Case[j]) * 100;
                     colorLimit = (int)temporary;
 
-                    Debug.Log("Recovered is " + colorLimit);
+                    //Debug.Log("Recovered is " + colorLimit);
 
                     ColorGrid(colorLimit);
                 }
+                else if (UIOptions3.choice == 5)//tested cases
+                {
 
+                    float temporary = ((float)Test[j] / (float)Population[j]) * 100;
+                    colorLimit = (int)temporary;
+
+                    //Debug.Log("Recovered is " + colorLimit);
+
+                    ColorGrid(colorLimit);
+                }
 
 
             }

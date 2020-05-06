@@ -11,11 +11,12 @@ public class UIOptions3 : MonoBehaviour
 
     public static string state;
     public GameObject inputField;
+    public static int choice;
     
 
     public void Start()
     {
-
+        choice = 0;
         Vis1.SetActive(true);
         Vis2.SetActive(false);
     }
@@ -30,11 +31,33 @@ public class UIOptions3 : MonoBehaviour
     {
         Vis1.SetActive(true);
         Vis2.SetActive(false);
+        choice = 0;
     }
 
     public void GetState()
     {
         state = inputField.GetComponent<Text>().text;
         Debug.Log(state);
+    }
+
+    public void PickChoice1()
+    {
+        choice = 1;
+    }
+    public void PickChoice2()
+    {
+        choice = 2;
+    }
+    public void PickChoice3()
+    {
+        choice = 3;
+    }
+    public void PickChoice4()
+    {
+        choice = 4;
+    }
+    public void PickChoice5()
+    {
+        choice = 5;
     }
 }
