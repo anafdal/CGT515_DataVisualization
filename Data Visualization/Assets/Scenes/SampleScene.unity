@@ -12175,6 +12175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputFile: Covid Cases US 2
   parent: {fileID: 251619544}
+  data: {fileID: 397095851}
   columnScale: 1
 --- !u!114 &1561630026
 MonoBehaviour:
@@ -12190,6 +12191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputFile: Covid Deaths US
   parent: {fileID: 1749640739}
+  data: {fileID: 397095851}
   columnScale: 1
 --- !u!1 &1582297919 stripped
 GameObject:

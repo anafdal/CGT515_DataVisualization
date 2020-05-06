@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class ColumnAnimation1 : MonoBehaviour
 {
     public string inputFile;
     public GameObject parent;
+    public Text data;
 
     // List for holding data from CSV reader
     private List<Dictionary<string, object>> dataList;
@@ -64,6 +66,8 @@ public class ColumnAnimation1 : MonoBehaviour
                 StartCoroutine(RateCoroutine());
             }
 
+
+           
         }
         else
         {
@@ -90,13 +94,14 @@ public class ColumnAnimation1 : MonoBehaviour
 
             tempList = columnList[u];
             temporary = Add(tempList);
+            data.text = "Day "+u;
 
-            yield return new WaitForSeconds((float)0.5);
+            yield return new WaitForSeconds((float)0.3);
             ChangeColumn(temporary);
         }
 
          value = false;
-
+         
     }
 
 
@@ -116,10 +121,9 @@ public class ColumnAnimation1 : MonoBehaviour
                     int y = temporary[i];
                     float addY = y * columnScale;
 
-                    if (child.name == Area[54])
-                    {
-                        Debug.Log(Area[i] + " " + temporary[i]);
-                    }
+                   
+                   
+                    
 
 
 
