@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CubePlotter : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class CubePlotter : MonoBehaviour
 
 
     public string inputFile;
+    public Text textHolder;
    
 
     // List for holding data from CSV reader
@@ -97,9 +99,9 @@ public class CubePlotter : MonoBehaviour
            
 
               if (Area[j]==UIOptions3.state)
-              { 
-                Debug.Log(Case[j] + " " + Population[j]);
-
+              {
+                //Debug.Log(Case[j] + " " + Population[j]);
+                textHolder.text = Area[j];
 
                 if (UIOptions3.choice==1)///cases per population per state
                 {
@@ -108,7 +110,7 @@ public class CubePlotter : MonoBehaviour
 
                     ColorGrid(colorLimit);
 
-                   // Debug.Log("Case is " + colorLimit);
+                   textHolder.text=colorLimit+ " % infected per population";
                 }
                 else if (UIOptions3.choice == 2)//deaths in all the cases per state
                 {
@@ -117,10 +119,9 @@ public class CubePlotter : MonoBehaviour
                     colorLimit = (int)temporary;
 
 
-                   // Debug.Log("Death is " + colorLimit);
-                    
-
                     ColorGrid(colorLimit);
+                    textHolder.text = colorLimit + " % deaths per infected";
+
 
                 }
                 else if (UIOptions3.choice == 3)//continuing cases (not recovered) in all the cases per state
@@ -129,29 +130,18 @@ public class CubePlotter : MonoBehaviour
                     float temporary = ((float)Active[j] / (float)Case[j]) * 100;
                     colorLimit = (int)temporary;
 
-                   // Debug.Log("Active is " + colorLimit);
-
                     ColorGrid(colorLimit);
-                }
-                else if (UIOptions3.choice == 4)//recovered cases from allc cases in state
-                {
+                    textHolder.text = colorLimit + " % not recovered";
 
-                    float temporary = ((float)Recovered[j] / (float)Case[j]) * 100;
-                    colorLimit = (int)temporary;
-
-                    //Debug.Log("Recovered is " + colorLimit);
-
-                    ColorGrid(colorLimit);
-                }
-                else if (UIOptions3.choice == 5)//tested cases
+                }             
+                else if (UIOptions3.choice == 4)//tested cases
                 {
 
                     float temporary = ((float)Test[j] / (float)Population[j]) * 100;
                     colorLimit = (int)temporary;
 
-                    //Debug.Log("Recovered is " + colorLimit);
-
                     ColorGrid(colorLimit);
+                    textHolder.text = colorLimit + " % tested";
                 }
 
 

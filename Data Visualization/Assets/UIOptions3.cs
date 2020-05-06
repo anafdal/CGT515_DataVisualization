@@ -56,8 +56,5 @@ public class UIOptions3 : MonoBehaviour
     {
         choice = 4;
     }
-    public void PickChoice5()
-    {
-        choice = 5;
-    }
+
 }
