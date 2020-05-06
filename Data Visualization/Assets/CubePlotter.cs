@@ -96,9 +96,9 @@ public class CubePlotter : MonoBehaviour
         {
            
 
-              if (Area[j]=="New York")
+              if (Area[j]==UIOptions3.state)
               { 
-                //Debug.Log(Case[j] + " " + Population[j]);
+                Debug.Log(Case[j] + " " + Population[j]);
 
 
                 if (Input.GetKeyDown("1"))
