@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ColumnPlotter : MonoBehaviour
 {/// <summary>
-/// Code modified from
+/// Code modified from https://sites.psu.edu/bdssblog/2017/04/06/basic-data-visualization-in-unity-scatterplot-creation/
 /// </summary>
     public string inputFile;
     public GameObject parent;
