@@ -11,6 +11,7 @@ public class UIOptions : MonoBehaviour
     public GameObject state1;
     public GameObject state2;
 
+   
     public GameObject Animation;
     public GameObject NoAnimation;
     public GameObject main;
@@ -171,6 +172,7 @@ public class UIOptions : MonoBehaviour
         Animation.SetActive(false);
     }
 
+  
     public void PickMean()
     {
         int index = 0;

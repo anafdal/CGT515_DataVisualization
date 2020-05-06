@@ -338,7 +338,7 @@ public class ColumnPlotter : MonoBehaviour
 
     }
 
-    private void ChangeColor(float lowquart,float highquart, float mean, List<int> column)
+   /* private void ChangeColor(float lowquart,float highquart, float mean, List<int> column)
     {
         for (var i = 0; i < dataList.Count; i++)
         {
@@ -368,7 +368,7 @@ public class ColumnPlotter : MonoBehaviour
                         child.GetComponent<Renderer>().material.color = Color.yellow;
                 }
         }
-    }
+    }*/
 
 }
 

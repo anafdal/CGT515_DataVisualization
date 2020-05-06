@@ -96,42 +96,83 @@ public class CubePlotter : MonoBehaviour
         {
            
 
-                if (Area[j]=="New York")
+              if (Area[j]=="New York")
+              { 
+                //Debug.Log(Case[j] + " " + Population[j]);
+
+
+                if (Input.GetKeyDown("1"))
+                {
+                    float temporary = ((float)Case[j] / (float)Population[j]) * 100;
+                    colorLimit = (int)temporary;
+
+                    ColorGrid(colorLimit);
+
+                    Debug.Log("Case is " + colorLimit);
+                }
+                else if (Input.GetKeyDown("2"))
                 {
 
-                Debug.Log(Case[j] + " " + Population[j]);
+                    float temporary = ((float)Dec[j] / (float)Case[j]) * 100;
+                    colorLimit = (int)temporary;
 
-                float temporary = ((float)Case[j] /(float) Population[j])*100;
-                colorLimit = (int)temporary;
-                
-                Debug.Log("value is "+colorLimit);
 
+                    Debug.Log("Death is " + colorLimit);
+                    
+
+                    ColorGrid(colorLimit);
 
                 }
-            
+                else if (Input.GetKeyDown("3"))
+                {
+
+                    float temporary = ((float)Active[j] / (float)Case[j]) * 100;
+                    colorLimit = (int)temporary;
+
+                    Debug.Log("Active is " + colorLimit);
+
+                    ColorGrid(colorLimit);
+                }
+                else if (Input.GetKeyDown("4"))
+                {
+
+                    float temporary = ((float)Recovered[j] / (float)Case[j]) * 100;
+                    colorLimit = (int)temporary;
+
+                    Debug.Log("Recovered is " + colorLimit);
+
+                    ColorGrid(colorLimit);
+                }
+
+
+
+            }
+
         }
 
 
+    }
 
 
-
+    public void ColorGrid(int color)
+    {
         int i = 0;
 
         foreach (Transform cube in PointHolder.transform)
         {
 
-         
-            if (i <=colorLimit)
-            {
-                cube.GetComponent<Renderer>().material.color = Color.green;
-            }
+                if (i <= color && color!=0)
+                {
+                    cube.GetComponent<Renderer>().material.color = Color.red;
+                }
+                else
+                {
+                    cube.GetComponent<Renderer>().material.color = Color.green;
+                }
 
-
-            i++;
-
+                i++;
+       
         }
-
-
     }
 
 }
