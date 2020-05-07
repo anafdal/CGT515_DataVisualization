@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 76964373}
   - component: {fileID: 76964372}
   m_Layer: 5
-  m_Name: SeeData
+  m_Name: SeeData 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3849,12 +3849,12 @@ GameObject:
   - component: {fileID: 651428282}
   - component: {fileID: 651428281}
   m_Layer: 5
-  m_Name: PickNoAnim
+  m_Name: SeeSata 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &651428280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9372,6 +9372,31 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Column
       objectReference: {fileID: 0}
+    - target: {fileID: 6129019568412933105, guid: 4b6f2ea6429851245b0f78bec6a2320e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5001cf010cb60ab44b96ad85290e53fb, type: 2}
+    - target: {fileID: 6129019569336726141, guid: 4b6f2ea6429851245b0f78bec6a2320e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5001cf010cb60ab44b96ad85290e53fb, type: 2}
+    - target: {fileID: 6129019569445853258, guid: 4b6f2ea6429851245b0f78bec6a2320e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5001cf010cb60ab44b96ad85290e53fb, type: 2}
+    - target: {fileID: 6129019569471334787, guid: 4b6f2ea6429851245b0f78bec6a2320e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5001cf010cb60ab44b96ad85290e53fb, type: 2}
+    - target: {fileID: 6129019569779928345, guid: 4b6f2ea6429851245b0f78bec6a2320e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5001cf010cb60ab44b96ad85290e53fb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6f2ea6429851245b0f78bec6a2320e, type: 3}
 --- !u!1 &1042066964 stripped
@@ -18067,7 +18092,7 @@ GameObject:
   - component: {fileID: 2102510974}
   - component: {fileID: 2102510978}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Floor 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
