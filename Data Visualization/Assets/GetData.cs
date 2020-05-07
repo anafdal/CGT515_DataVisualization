@@ -8,13 +8,18 @@ public class GetData : MonoBehaviour
 
     public static string data;
 
+   void Start()
+    {
+        data = "Welcome!";
+        
+    }
     private void OnMouseDown()
     {
 
         //Debug.Log(this.name);
      
 
-      data = this.name;
+         data = this.name;
         
       
     }

@@ -125,8 +125,9 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localScale += new Vector3(0, addY, 0);
                         child.name=Area[i] + " : " + Case[i]+" cases";///change name
 
+
                         if (UIOptions.color == 2)
-                        { //ChangeColor(lowquart, highquart, mean, Case);
+                        { //Change color by percentiles
 
                             if (Case[i] < lowquart)
                             {
@@ -151,6 +152,7 @@ public class ColumnPlotter : MonoBehaviour
                                 child.GetComponent<Renderer>().material.color = Color.green;
 
                         }
+
                     }
                     else if (UIOptions.choice == 2)//Death Rate
                     {
@@ -172,9 +174,9 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localScale += new Vector3(0, addY, 0);
                         child.name = Area[i] + " : " + Dec[i]+" deaths";///change name
 
-                        //ChangeColor(lowquart, highquart, mean, Case);
+                        
                         if (UIOptions.color == 2)
-                        { //ChangeColor(lowquart, highquart, mean, Case);
+                        { //Change color by percentiles
 
                             if (Dec[i] < lowquart)
                             {
@@ -214,9 +216,9 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localScale += new Vector3(0, addY, 0);
                         child.name = Area[i] +" : "+ Active[i]+" active cases";///change name
 
-                        //color columns based on mean
+                        
                         if (UIOptions.color == 2)
-                        { //ChangeColor(lowquart, highquart, mean, Case);
+                        { //Change color by percentiles
 
                             if (Active[i] < lowquart)
                             {
@@ -257,9 +259,9 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localScale += new Vector3(0, addY, 0);
                         child.transform.name = Area[i] + " : " + Recovered[i]+" recovered";///change name
 
-                        //color columns based on mean
+                        
                         if (UIOptions.color == 2)
-                        { //ChangeColor(lowquart, highquart, mean, Case);
+                        { //Change color by percentiles
 
                             if (Recovered[i] < lowquart)
                             {
@@ -300,9 +302,9 @@ public class ColumnPlotter : MonoBehaviour
                         child.transform.localScale += new Vector3(0, addY, 0);
                         child.transform.name = Area[i] + " : " + Test[i]+" tested";///change name
 
-                        //color columns based on mean
+                       
                         if (UIOptions.color == 2)
-                        { //ChangeColor(lowquart, highquart, mean, Case);
+                        { //Change color by percentiles
 
                             if (Test[i] < lowquart)
                             {
@@ -338,37 +340,7 @@ public class ColumnPlotter : MonoBehaviour
 
     }
 
-   /* private void ChangeColor(float lowquart,float highquart, float mean, List<int> column)
-    {
-        for (var i = 0; i < dataList.Count; i++)
-        {
-            foreach (Transform child in parent.transform)
-                //color columns based on mean
-                if (Input.GetKeyDown("9"))
-                {
-                    if (column[i] > mean)
-                    {
-                        child.GetComponent<Renderer>().material.color = Color.red;
-                    }
-                    else
-                        child.GetComponent<Renderer>().material.color = Color.green;
-                }
-                else if (Input.GetKeyDown("8"))
-                {
-                    if (column[i] < lowquart)
-                    {
-                        child.GetComponent<Renderer>().material.color = Color.green;
-                    }
-                    else if (column[i] > highquart)
-                    {
-                        child.GetComponent<Renderer>().material.color = Color.red;
 
-                    }
-                    else
-                        child.GetComponent<Renderer>().material.color = Color.yellow;
-                }
-        }
-    }*/
 
 }
 

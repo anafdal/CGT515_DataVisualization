@@ -17,8 +17,8 @@ public class UIOptions : MonoBehaviour
     public GameObject main;
 
     public static int color=1;
-  
-   
+ 
+
 
     public void Pick(string text)
     {
@@ -29,6 +29,7 @@ public class UIOptions : MonoBehaviour
     public void PickData1()//Total cases per state
     {
         state0.SetActive(true);
+        
 
         //naming
         int index = 0;

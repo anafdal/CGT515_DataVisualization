@@ -72,8 +72,8 @@ public class DataPlotter : MonoBehaviour
 
                     // Assigns original values to dataPointName
                     string dataPointName =
-                        dataList[i][geoArea] + " "
-                        + columnList[j] + " "
+                        "Area: "+dataList[i][geoArea] + " Date: "
+                        + columnList[j] + " Number: "
                         + dataList[i][caseRate];       
 
                     // Debug.Log(x + " " + y + " " + z);

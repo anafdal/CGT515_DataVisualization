@@ -8,7 +8,7 @@ public class ColumnAnimation2 : MonoBehaviour
 {
     public string inputFile;
     public GameObject parent;
-    public Text data;
+    public Text days;
 
     // List for holding data from CSV reader
     private List<Dictionary<string, object>> dataList;
@@ -30,7 +30,8 @@ public class ColumnAnimation2 : MonoBehaviour
     void Start()
     {
         dataList = CSVReader.Read(inputFile);
-
+        days.text = "Time";
+        
 
 
         columnList = new List<string>(dataList[1].Keys);
@@ -93,7 +94,7 @@ public class ColumnAnimation2 : MonoBehaviour
 
             tempList = columnList[u];
             temporary = Add(tempList);
-            data.text = "Day " + u;
+            days.text = "Day " + u;
 
             yield return new WaitForSeconds((float)0.3);
             ChangeColumn(temporary);
@@ -120,10 +121,10 @@ public class ColumnAnimation2 : MonoBehaviour
                     int y = temporary[i];
                     float addY = y * columnScale;
 
-                    if (child.name == Area[54])
+                   /* if (child.name == Area[54])
                     {
                         Debug.Log(Area[i] + " " + temporary[i]);
-                    }
+                    }*/
 
 
 
