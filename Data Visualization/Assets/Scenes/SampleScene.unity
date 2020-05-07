@@ -1413,7 +1413,7 @@ PrefabInstance:
     - target: {fileID: 8437739507021809391, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8437739507021809391, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
@@ -1493,22 +1493,27 @@ PrefabInstance:
     - target: {fileID: 8437739506040507808, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 385.65002
+      value: 334.36243
       objectReference: {fileID: 0}
     - target: {fileID: 8437739506040507808, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3684
+      value: -3418
       objectReference: {fileID: 0}
     - target: {fileID: 8437739506040507808, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 1312
       objectReference: {fileID: 0}
+    - target: {fileID: 8437739506040507808, guid: b01f630cef0fe2947995bec30dda1d61,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1157.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8437739505701702675, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3693
+      value: -3426
       objectReference: {fileID: 0}
     - target: {fileID: 8437739505701702675, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
@@ -1523,7 +1528,7 @@ PrefabInstance:
     - target: {fileID: 8437739505701702675, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3993.1553
+      value: 3462.1055
       objectReference: {fileID: 0}
     - target: {fileID: 8437739506946151406, guid: b01f630cef0fe2947995bec30dda1d61,
         type: 3}
@@ -1598,7 +1603,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1134051564}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251619544 stripped
 GameObject:
@@ -2804,7 +2809,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8ef8bbf13f603204a8ea885c81de6186, type: 3}
-    m_FontSize: 10
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2817,7 +2822,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'View  timeline of Deaths by COVID-19 in US
 
-    3/1/2020-4/5/2020'
+'
 --- !u!222 &414017638
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3551,7 +3556,7 @@ Transform:
   - {fileID: 1468160573}
   - {fileID: 1965229163}
   m_Father: {fileID: 2110080558}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &581718680 stripped
 GameObject:
@@ -4005,8 +4010,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657827235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 511.4841, y: -710.129, z: 17859.348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3281.5159, y: 946.871, z: 1145.3477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 705827005}
@@ -4014,8 +4019,8 @@ Transform:
   - {fileID: 157231843}
   - {fileID: 3840208}
   - {fileID: 1561630023}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 2110080558}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &657953111 stripped
 GameObject:
@@ -5303,14 +5308,14 @@ RectTransform:
   m_GameObject: {fileID: 698909122}
   m_LocalRotation: {x: -0, y: 0.99474585, z: -0, w: -0.10237545}
   m_LocalPosition: {x: 0, y: 0, z: 50.834152}
-  m_LocalScale: {x: 6.6548877, y: 14.817249, z: 3.9413157}
+  m_LocalScale: {x: 6.6548877, y: 8.183864, z: 3.9413157}
   m_Children: []
   m_Father: {fileID: 879687682}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.08356, y: 1531}
+  m_AnchoredPosition: {x: 24.08356, y: 1626}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698909124
@@ -5340,13 +5345,13 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 300
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pick Timeline
+  m_Text: Pick below for timeline 3/8/2020-5/5/20
 --- !u!222 &698909125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7433,7 +7438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 27.734001, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2675, y: -1127}
+  m_AnchoredPosition: {x: -2675, y: -322}
   m_SizeDelta: {x: 944, y: 524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895996043
@@ -7934,11 +7939,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996782867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14769.256, y: -374.23755, z: -8299.439}
+  m_LocalPosition: {x: -14769.256, y: -2369, z: -8299.439}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1134051564}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999552302 stripped
 GameObject:
@@ -9754,7 +9759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 27.734001, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2675, y: -1127}
+  m_AnchoredPosition: {x: -2675, y: -322}
   m_SizeDelta: {x: 944, y: 524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104239004
@@ -9889,12 +9894,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1358659620}
-  - {fileID: 996782868}
   - {fileID: 244199671}
-  - {fileID: 1965710910}
   - {fileID: 866583751}
+  - {fileID: 1965710910}
+  - {fileID: 996782868}
   m_Father: {fileID: 2110080558}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1139130908
 GameObject:
@@ -10665,7 +10670,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8ef8bbf13f603204a8ea885c81de6186, type: 3}
-    m_FontSize: 10
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -10676,9 +10681,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'View Timeline of COVID-19 spread in US
+  m_Text: 'View timeline of COVID-19 spread in US
 
-    3/8/2020-5/5/20'
+'
 --- !u!222 &1283149569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13799,14 +13804,14 @@ RectTransform:
   m_GameObject: {fileID: 1555854926}
   m_LocalRotation: {x: -0, y: 0.99474585, z: -0, w: -0.10237545}
   m_LocalPosition: {x: 0, y: 0, z: 50.834152}
-  m_LocalScale: {x: 6.6548877, y: 14.817249, z: 3.9413157}
+  m_LocalScale: {x: 6.6548877, y: 15.937434, z: 3.9413157}
   m_Children: []
   m_Father: {fileID: 895996042}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.08356, y: 1531}
+  m_AnchoredPosition: {x: 24.08356, y: 1580}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1555854928
@@ -13822,7 +13827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10029776, g: 0.9528302, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13830,10 +13835,10 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8ef8bbf13f603204a8ea885c81de6186, type: 3}
-    m_FontSize: 15
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 300
     m_Alignment: 1
@@ -13842,7 +13847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'This visualization shows the data for the spread of COVID-19 in the US. '
+  m_Text: 'This visualization offers insight for the spread of COVID-19 in the US. '
 --- !u!222 &1555854929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14279,7 +14284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 24.571001, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -2568, y: -1127}
+  m_AnchoredPosition: {x: -2568, y: -322}
   m_SizeDelta: {x: 944, y: 524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618771185
@@ -16957,7 +16962,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965710909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14769.256, y: -374.23755, z: -8299.439}
+  m_LocalPosition: {x: -14769.256, y: -2481, z: -8299.439}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1134051564}
@@ -18230,7 +18235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110080557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3793, y: -1657, z: 16714}
+  m_LocalPosition: {x: 3793, y: -996, z: 16714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 769885543}
@@ -18240,6 +18245,7 @@ Transform:
   - {fileID: 705507995}
   - {fileID: 468518498}
   - {fileID: 73008185}
+  - {fileID: 657827236}
   - {fileID: 572861457}
   - {fileID: 1134051564}
   m_Father: {fileID: 0}
