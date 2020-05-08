@@ -7,4 +7,4 @@ https://bnonews.com/index.php/2020/03/tracking-coronavirus-u-s-real-time-visuali
 https://www.worldometers.info/coronavirus/country/us/, 
 https://www.census.gov/data/tables/time-series/demo/popest/2010s-state-total.html
 
-Some minimal data analysis was done by me as well. This project was developed with the idea that in the future, it would become a VR application, however due to current circumstances, I do not have enough resorces to make that possible.
+Some minimal data analysis was done by me as well. This project was developed with the idea that in the future, it would become a VR application, however due to current circumstances, I do not have a VR headset to make that possible.
