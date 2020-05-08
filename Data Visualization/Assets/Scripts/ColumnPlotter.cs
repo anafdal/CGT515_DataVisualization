@@ -139,7 +139,7 @@ public class ColumnPlotter : MonoBehaviour
 
                             }
                             else
-                                child.GetComponent<Renderer>().material.color = Color.magenta;
+                                child.GetComponent<Renderer>().material.color = Color.yellow;
                         }
                         else if (UIOptions.color == 1)
                         {
@@ -188,7 +188,7 @@ public class ColumnPlotter : MonoBehaviour
 
                             }
                             else
-                                child.GetComponent<Renderer>().material.color = Color.magenta;
+                                child.GetComponent<Renderer>().material.color = Color.yellow;
                         }
                         else if (UIOptions.color == 1)
                         {
@@ -230,7 +230,7 @@ public class ColumnPlotter : MonoBehaviour
 
                             }
                             else
-                                child.GetComponent<Renderer>().material.color = Color.magenta;
+                                child.GetComponent<Renderer>().material.color = Color.yellow;
                         }
                         else if (UIOptions.color == 1)
                         {
@@ -273,7 +273,7 @@ public class ColumnPlotter : MonoBehaviour
 
                             }
                             else
-                                child.GetComponent<Renderer>().material.color = Color.magenta;
+                                child.GetComponent<Renderer>().material.color = Color.yellow;
                         }
                         else if (UIOptions.color == 1)
                         {
@@ -316,7 +316,7 @@ public class ColumnPlotter : MonoBehaviour
 
                             }
                             else
-                                child.GetComponent<Renderer>().material.color = Color.magenta;
+                                child.GetComponent<Renderer>().material.color = Color.yellow;
                         }
                         else if (UIOptions.color == 1)
                         {

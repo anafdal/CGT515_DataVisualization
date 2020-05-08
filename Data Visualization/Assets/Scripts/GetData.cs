@@ -10,7 +10,7 @@ public class GetData : MonoBehaviour
 
    void Start()
     {
-        data = "Welcome!";
+        data = "Click For Data";
         
     }
     private void OnMouseDown()
@@ -20,10 +20,17 @@ public class GetData : MonoBehaviour
      
 
          data = this.name;
-        
-      
+            
     }
+    private void OnMouseUp()
+    {
 
+        //Debug.Log(this.name);
+
+
+        data = "Click For Data";
+
+    }
 
 
 }
