@@ -8,6 +8,7 @@ public class ColumnAnimation2 : MonoBehaviour
 {
     public string inputFile;
     public GameObject parent;
+    public Text other;
     public Text days;
 
     // List for holding data from CSV reader
@@ -59,6 +60,9 @@ public class ColumnAnimation2 : MonoBehaviour
 
         if (UIOptions.method == 2)//if user selects this animation
         {
+            other.enabled = false;
+            days.enabled = true;
+
             parent.SetActive(true);
 
             if (value == true)

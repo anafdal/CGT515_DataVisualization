@@ -8,6 +8,7 @@ public class ColumnAnimation1 : MonoBehaviour
 {
     public string inputFile;
     public GameObject parent;
+    public Text other;
     public Text days;
    
     
@@ -62,11 +63,13 @@ public class ColumnAnimation1 : MonoBehaviour
       
         if (UIOptions.method == 1)//if user selects this animation
         {
-           
+            other.enabled = false;
+            days.enabled = true;
+            parent.SetActive(true);
 
             if (value == true)
             {
-                parent.SetActive(true);
+               
                 StartCoroutine(RateCoroutine());
             }
 
