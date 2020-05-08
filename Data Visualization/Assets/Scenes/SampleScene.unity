@@ -5279,7 +5279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pick below for timeline 3/8/2020-5/5/20
+  m_Text: Pick below for timeline 3/8/2020-4/5/20
 --- !u!222 &698909125
 CanvasRenderer:
   m_ObjectHideFlags: 0
