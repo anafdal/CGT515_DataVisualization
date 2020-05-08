@@ -8460,6 +8460,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 71
       objectReference: {fileID: 0}
+    - target: {fileID: 6129019568424418167, guid: 4b6f2ea6429851245b0f78bec6a2320e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10911
+      objectReference: {fileID: 0}
     - target: {fileID: 6129019568473680367, guid: 4b6f2ea6429851245b0f78bec6a2320e,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -18390,7 +18395,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 3/8/2020-5/5/2020
+  m_Text: 3/8/2020-4/5/2020
 --- !u!222 &2119349975
 CanvasRenderer:
   m_ObjectHideFlags: 0
