@@ -1,4 +1,4 @@
-# CGT515_Finale
+# CGT515_Final
 
 For my final project for the CGT-515 class, Virtual Enviroments, I developed a data visualization application to demonstrate different data  presentations tools for the spread of COVID-19 in the US.
 I developed a 3D graph for the timleine of COVID-19 in each state, as well as a map visualization for each state that presents information like how many infected there are in each state, how many were tested, how many recovered etc.
